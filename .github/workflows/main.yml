@@ -27,6 +27,6 @@ jobs:
           password: ${{ secrets.GHCRIOTOKEN }}
       - name: Docker pull and push
         run: |
-          docker pull cadvisor/cadvisor:v0.37.5
-          docker tag  cadvisor/cadvisor:v0.37.5  ghcr.io/liu-haha/syncgoogle/cadvisor:v0.37.5
+          docker pull gcr.io/cadvisor/cadvisor:v0.37.5
+          docker tag  gcr.io/cadvisor/cadvisor:v0.37.5  ghcr.io/liu-haha/syncgoogle/cadvisor:v0.37.5
           docker push ghcr.io/liu-haha/syncgoogle/cadvisor:v0.37.5
